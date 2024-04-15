@@ -9,7 +9,12 @@ class Gcd
         int gcdResult;
 
     public:
-        Gcd(int n1, int n2) : num1(n1), num2(n2), gcdResult(1) {}
+        Gcd(int n1, int n2)
+        {
+            num1 = n1;
+            num2 = n2;
+            gcdResult = 1;
+        }
 
         void calculateGcd() {
             int smaller = (num1 < num2) ? num1 : num2;
@@ -26,7 +31,8 @@ class Gcd
         }
 };
 
-int main() {
+int main() 
+{
     int num1, num2;
     cout << "Input two numbers: ";
     cin >> num1 >> num2;

@@ -1,13 +1,18 @@
 #include <iostream>
 using namespace std;
 
-class Fact {
+class Fact 
+{
 private:
     int number;
     int factorial;
 
 public:
-    Fact(int n) : number(n), factorial(1) {}
+    Fact(int n)
+    {
+        number = n;
+        factorial = 1;
+    }
 
     void calculateFactorial() 
     {
@@ -23,7 +28,8 @@ public:
     }
 };
 
-int main() {
+int main() 
+{
     int num;
     cout << "Input a number: ";
     cin >> num;
